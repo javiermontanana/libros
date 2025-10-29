@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+
+<table>
+    <tr>
+        <th>TITULO</th>
+        <th>AUTOR </th>
+        <th>IDIOMA</th>
+        <th>EDITORIAL</th>
+        <th>ISBN13</th>
+    </tr>
+
+	{% for line in site.data.libros2 %}
+    <tr>
+        <td>{{ line.Titulo }}</td>
+        <td>{{ line.Autor }}</td>
+        <td>{{ line.Idioma }}</td>
+        <td>{{ line.Editorial }}</td>
+        <td>{{ line.ISBN13 }}</td>
+    </tr>
+	{% endfor %}
+
+</table>
